@@ -1,4 +1,4 @@
-# n-queens with a twist
+# n-queens with no straight lines
 
 A set of algorithms to solve the n-queens* problem:  
 "Place N queens on an NxN chess board so that none of them attack each other (the classic n-queens problem).
