@@ -5,7 +5,7 @@ A set of algorithms to solve the n-queens* problem:
 Additionally, please make sure that no three queens are in a straight line at ANY angle, so queens on A1, C2 and E3, despite not attacking each other, form a straight line at some angle."
 
 ## Requirements
-* Java 8
+* Java 8+
 
 ## Code References
 ```java

@@ -14,9 +14,10 @@ import java.util.concurrent.*;
  * It decomposes the problem space by rows of the initial column and cancels the remaining tasks when a solution is
  * found. This solver will attempt to use all available cores in the virtual machine.
  * <p> <b>Design notes:</b>
- * <p> 1. For a larger value of N and number of cores this is not a very efficient implementation: even though it
+ * <p> 1. For a larger value of N and number of cores this is not a very efficient implementation - even though it
  * can find faster solutions by looking at multiple beginnings concurrently, it is only eliminating the first column,
- * thus any performance gains quickly plateau. A more depth-focused approach would be better, but require more work.
+ * thus any performance gains quickly plateau in comparison to the total execution time. A more depth-focused approach
+ * would be better, but require more work.
  * <p> 2. It is using a fixed thread pool with unbounded queue, since the value of N is well-known and "small"
  * . For <b>very</b> large numbers it could be changed into a bounded blocking queue to preserve memory.
  * <p> 3. Usage of recursion is ok for the reasons above, but for a very large N it could be changed to an iterative
